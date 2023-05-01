@@ -11,6 +11,10 @@
 // BONUS 2:
 // Organizzare i singoli membri in card/schede (se non avete idee prendete spunto dallo screenshot)
 
+
+
+//create array
+
 const arrTeam = [
     {
         name: 'Wayne Barnett',
@@ -44,7 +48,36 @@ const arrTeam = [
     },
 ]
 
+//console.log for all the array's elements
+
 for (let i = 0; i < arrTeam.length; i++){
     const objTeam = arrTeam[i];
     console.log(objTeam);
-}
+};
+
+
+//print in DOM
+
+const eleTeamMember = document.querySelector('.grid');
+
+for (let eleMember of arrTeam){
+    console.log(eleMember);
+
+    eleTeamMember.innerHTML +=
+    `<div>${eleMember.photo}<div>
+     <div>${eleMember.name}<div>
+     <div>${eleMember.role}<div>`
+};
+
+
+//Alternative solution (IT DOESN'T WORK - prints [object Object])
+
+// function printMembers(arg){
+//     let members = "";
+//     for(let i = 0; i < arg.lenght; i++){
+//         members += `<li>${arg[i]}</li>`;
+//     }
+//     return members
+// }
+
+// document.querySelector('.grid').innerHTML = arrTeam;
