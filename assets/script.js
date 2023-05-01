@@ -43,3 +43,8 @@ const arrTeam = [
         photo: 'barbara-ramos-graphic-designer.jpg',
     },
 ]
+
+for (let i = 0; i < arrTeam.length; i++){
+    const objTeam = arrTeam[i];
+    console.log(objTeam);
+}
