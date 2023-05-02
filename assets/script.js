@@ -70,6 +70,13 @@ for (let eleMember of arrTeam){
 };
 
 
+// bonus 1 Doesn't work - fix
+
+// eleTeamMember.innerHTML += `
+//                         <li>
+//                             <img src="img/${objTeam.photo}">
+//                         </li>`
+
 //Alternative solution (IT DOESN'T WORK - prints [object Object])
 
 // function printMembers(arg){
